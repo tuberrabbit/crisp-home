@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Crisp</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* 模拟 iOS 的系统字体栈 */
+        /* iOS system font stack */
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
     </style>
 </head>
@@ -17,58 +17,130 @@
             <div class="inline-block p-3 rounded-2xl bg-white shadow-sm mb-4">
                 <span class="text-3xl font-bold tracking-tight text-green-600">Crisp</span>
             </div>
-            <h1 class="text-3xl font-bold text-gray-900">隐私政策</h1>
-            <p class="text-sm text-gray-500 mt-2">生效日期：2025年</p>
+            <h1 class="text-3xl font-bold text-gray-900">Privacy Policy</h1>
+            <p class="text-sm text-gray-500 mt-2">Effective Date: 2025</p>
         </header>
 
         <main class="bg-white p-8 rounded-3xl shadow-sm space-y-8">
             
             <section>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">1. 引言</h2>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">1. Introduction</h2>
                 <p class="text-gray-600 leading-relaxed">
-                    欢迎使用 <strong>Crisp</strong>（以下简称“我们将”）。我们致力于通过智能技术帮助您管理食品保质期，消除浪费。本隐私政策旨在透明地说明我们在您使用 Crisp 时如何处理您的信息。
+                    Welcome to <strong>Crisp</strong> (referred to as "we," "our," or "the app"). Crisp is your intelligent personal lifestyle management assistant, designed to help you organize your life efficiently through AI-powered interactions. This Privacy Policy explains how we handle your information when you use Crisp.
                 </p>
             </section>
 
             <section>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">2. 我们收集的信息</h2>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">2. Information We Collect</h2>
                 <ul class="list-disc list-inside text-gray-600 space-y-2 ml-2">
-                    <li><strong>食品数据：</strong> 您上传的食品名称、过期日期及库存状态。</li>
-                    <li><strong>图像数据：</strong> 您使用相机拍摄的食品照片。这些照片仅用于本地展示或通过 LLM (AI) 进行识别，识别完成后我们会对原始数据进行处理。</li>
-                    <li><strong>账号信息：</strong> 通过 Firebase Auth 登录时的基础信息（如 Email），用于同步您的数据。</li>
+                    <li><strong>Item Data:</strong> Information about items you manage through the app, including names, descriptions, dates, and status.</li>
+                    <li><strong>Voice Data:</strong> Audio recordings of your voice inputs, which are processed by AI to understand your requests. Voice data is used for transcription and AI interaction purposes.</li>
+                    <li><strong>Image Data:</strong> Photos you capture using the camera feature to scan or identify items. Images are processed by AI services for recognition and then handled according to our data retention policies.</li>
+                    <li><strong>Account Information:</strong> Basic information provided through Firebase Authentication (such as email address) used to sync your data across devices.</li>
+                    <li><strong>Usage Data:</strong> Information about how you interact with the app to improve our services.</li>
                 </ul>
             </section>
 
             <section>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">3. 权限使用说明</h2>
-                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
-                    <p class="font-medium text-gray-800 mb-1">📷 相机权限</p>
-                    <p class="text-sm text-gray-500">用于扫描食品条形码或拍摄食品实体以进行 AI 识别录入。我们不会在您不知情的情况下启动相机。</p>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">3. Permissions Explained</h2>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <p class="font-medium text-gray-800 mb-1">📷 Camera Permission</p>
+                        <p class="text-sm text-gray-500">Used to scan items and capture photos for AI-powered identification and management. We never access your camera without your explicit action.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <p class="font-medium text-gray-800 mb-1">🎤 Microphone Permission</p>
+                        <p class="text-sm text-gray-500">Used to capture voice inputs for AI interaction. This allows you to communicate with Crisp naturally using your voice.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <p class="font-medium text-gray-800 mb-1">🗣️ Speech Recognition Permission</p>
+                        <p class="text-sm text-gray-500">Used to transcribe your spoken words into text for AI processing and analysis, enabling natural language interactions.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <p class="font-medium text-gray-800 mb-1">📅 Calendar Permission</p>
+                        <p class="text-sm text-gray-500">Used to create reminders for important items and dates, helping you stay organized and never miss important deadlines.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <p class="font-medium text-gray-800 mb-1">🔔 Notifications Permission</p>
+                        <p class="text-sm text-gray-500">Used to send you timely alerts and reminders about your items and important events.</p>
+                    </div>
                 </div>
             </section>
 
             <section>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">4. 第三方服务</h2>
-                <p class="text-gray-600 leading-relaxed mb-2">为了提供服务，我们使用了以下值得信赖的基础设施：</p>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">4. Third-Party Services</h2>
+                <p class="text-gray-600 leading-relaxed mb-2">To provide our services, we use the following trusted infrastructure providers:</p>
                 <ul class="list-disc list-inside text-gray-600 space-y-1 ml-2">
-                    <li><strong>Google Firebase：</strong> 用于安全地存储您的库存数据和用户认证。</li>
-                    <li><strong>LLM 服务商：</strong> 用于智能分析食品名称和生成菜谱建议。</li>
+                    <li><strong>Google Firebase:</strong> Used for secure data storage, user authentication, and data synchronization across your devices.</li>
+                    <li><strong>AI/LLM Service Providers:</strong> Used for intelligent analysis of your inputs, natural language processing, image recognition, and generating helpful suggestions.</li>
                 </ul>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">5. 数据安全与删除</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    我们采用业界标准的安全措施保护您的数据。如果您希望删除您的账号及所有相关数据，请在 App 设置中点击“删除账号”，或通过邮件联系我们。
+                <p class="text-gray-600 leading-relaxed mt-2">
+                    These services are bound by their own privacy policies and security standards. We carefully select partners who maintain high standards of data protection.
                 </p>
             </section>
 
             <section>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">6. 联系我们</h2>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">5. How We Use Your Information</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-2">
+                    <li>To provide and maintain the core functionality of Crisp</li>
+                    <li>To process your voice and image inputs through AI services</li>
+                    <li>To sync your data across your devices</li>
+                    <li>To send you notifications and reminders</li>
+                    <li>To improve and optimize our services</li>
+                    <li>To provide customer support</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">6. Data Security</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    We implement industry-standard security measures to protect your data. Your information is encrypted in transit and at rest. We regularly review and update our security practices to ensure your data remains protected.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">7. Data Retention and Deletion</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    We retain your data for as long as your account is active or as needed to provide you services. If you wish to delete your account and all associated data, you can do so in the app's Settings page by selecting "Delete Account," or by contacting us via email. Upon account deletion, all your personal data will be permanently removed from our systems.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">8. Your Rights</h2>
+                <p class="text-gray-600 leading-relaxed mb-2">You have the right to:</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-1 ml-2">
+                    <li>Access your personal data</li>
+                    <li>Correct inaccurate data</li>
+                    <li>Request deletion of your data</li>
+                    <li>Export your data</li>
+                    <li>Withdraw consent for data processing</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">9. Children's Privacy</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Crisp is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">10. Changes to This Policy</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. We encourage you to review this Privacy Policy periodically.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-3">11. Contact Us</h2>
                 <p class="text-gray-600">
-                    如果您对本政策有任何疑问，请联系：<br>
+                    If you have any questions about this Privacy Policy or our data practices, please contact us at:<br>
                     <a href="mailto:support@iplm.app" class="text-blue-600 hover:underline">support@iplm.app</a>
-                    </p>
+                </p>
             </section>
 
         </main>
@@ -79,3 +151,4 @@
     </div>
 </body>
 </html>
+
